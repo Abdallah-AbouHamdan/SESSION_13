@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 10vh;
+    width: 100vw;
+    padding: 0px 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #checked {
+    display: none;
+  }
+  .list {
+    position: absolute;
+    right: 30px;
+    width: 60px;
+    cursor: pointer;
+    display: none;
+  }
+  header .rose{
+    position: absolute;
+    height: 400px;
+    background-color: #FFF3EC;
+    width: 200px;
+    right: 0;
+    z-index: -1;
+    top: 0;
+  }
+  header .second nav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+  }
+  header .second nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+  }
+  header .second {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  @media (max-width: 700px) {
+    .list {
+      display: inline-flex;
+    }
+  
+    #checked:checked ~ .list #menulist {
+      display: none;
+    }
+  
+    #checked:checked ~ .list #closelist {
+      display: block;
+    }
+  
+    .link {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      height: 0;
+      background-color: #fff;
+      backdrop-filter: blur(50%);
+      box-shadow: 0 0.1px 0.3rem rgb(123, 123, 123);
+      transition: 0.3s ease;
+      overflow: hidden;
+    }
+  
+    #checked:checked ~ .link {
+      height: 12rem;
+    }
+  
+    .link a {
+      display: flex;
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+      text-align: center;
+      color: var(--grey);
+    }
+  
+    .list #closelist {
+      display: none;
+    }
+  }
