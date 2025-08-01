@@ -5,40 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="navbar">
-        <div class="first">
-            <img src="LOGO.png" width="60px" class="logo">
-        </div>
-        <div class="rose">
-
-        </div>
-        <div class="second">
-            <input type="checkbox" id="checked">
-            <label for="checked" class="list">
-                    <svg width="40px" xmlns="http://www.w3.org/2000/svg" fill="none" id="menulist" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
-                </svg>
-                <svg width="40px" xmlns="http://www.w3.org/2000/svg" fill="none" id="closelist" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-
-            </label>
-            <nav class="link">
-                <a href="#">About</a>
-                <a href="#">Catalogue</a>
-                <a href="#">Services</a>
-                <a href="#">Search</a>
-            </nav>
-            
-        </div>
+      <div class="first">
+        <img src="LOGO.webp" width="60px" class="logo" />
+      </div>
+      <div class="second">
+        <input type="checkbox" id="checked" />
+        <label for="checked" class="list">
+          <svg
+            width="40px"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            id="menulist"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"
+            />
+          </svg>
+          <svg
+            width="40px"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            id="closelist"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </label>
+        <nav class="link">
+          <a href="#">About</a>
+          <a href="#">Catalogue</a>
+          <a href="#">Services</a>
+          <a href="#">Search</a>
+        </nav>
+      </div>
     </header>
-    <section>
-        
+    <section class="section1">
+      <div class="first">
+        <h1>Nordiac</h1>
+        <h3>designs</h3>
+        <div class="btn-con">
+          <button class="btn1" type="button">
+            Show catalogue
+            <i class="fa-solid fa-arrow-right" style="color: #fff"></i>
+          </button>
+          <button class="btn2" type="button">
+            Learn more
+            <i class="fa-solid fa-arrow-right" style="color: #000"></i>
+          </button>
+        </div>
+        <p class="p1">
+          Step into the world of Nordic Designs and immerse yourself in the
+          beauty of Scandinavian furniture.
+        </p>
+        <div class="img-con">
+          <img src="img2.png" />
+          <img src="img3.png" />
+          <img src="img4.png" />
+        </div>
+        <button type="button" class="btn3">
+          Show more <span aria-hidden="true">→</span>
+        </button>
+      </div>
+      <div class="second">
+        <img src="img1.png" alt="" />
+      </div>
+      <div class="rose"></div>
+    </section>
+    <section class="section2">
+      <h2>Trending Products</h2>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img2.png" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Minimalist Wooden Armchair</div>
+            <div class="product-price">$36.87</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img3.png" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Nordic Oak Table</div>
+            <div class="product-price">$46.12</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img4.png" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Oslo Storage Coffee Table</div>
+            <div class="product-price">$30.45</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="img5.png" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Copenhagen Pendant Lamp</div>
+            <div class="product-price">$12.87</div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-view-more" aria-label="View more trending products">
+        View more →
+      </button>
+    </section>
+    <section class="about">
+      <div class="about-content">
+        <img src="img6.png" alt="Cozy Chair" />
+        <div class="about-text">
+          <p>
+            Discover the timeless elegance and functionality of<br />
+            Scandinavian design at <span>Nordic Designs.</span>
+          </p>
+          <p>
+            With our carefully curated selection, we bring the essence of
+            <br /><span>Scandinavian style </span>into your home, creating a warm and <br />
+            inviting atmosphere.
+          </p>
+          <div class="statistics">
+            <div>200+<br /><span>Success Projects</span></div>
+            <div>300+<br /><span>Product Launches</span></div>
+            <div>170k<br /><span>Happy Customers</span></div>
+          </div>
+          <button class="about-button">About Us →</button>
+        </div>
+      </div>
     </section>
   </body>
 </html>
